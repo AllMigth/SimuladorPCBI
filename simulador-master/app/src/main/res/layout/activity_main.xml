@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/precioMetroCuadrado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/textoValorMetroCuadrado"
+            android:textAlignment="center"
+            android:inputType="phone"
+            />
+
+        <EditText
+            android:id="@+id/valorSuperficie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/valorSuperficie"
+            android:textAlignment="center"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoCaracteristicasDelSuelo"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/caracteristicasDelSueloSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoPreguntaEdificaciones"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siEdificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noEdificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/valorSuperficieDeConstrucciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/valorSuperficieConstruido"
+            android:inputType="phone"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoNumeroDePisos"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/numeroDePisosSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoMaterial"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/materialRadioGroup"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/materialCemento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/cemento"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/materialMadera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/madera"
+                />
+            <RadioButton
+                android:id="@+id/materialBambu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/bambu"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoServiciosViaFrontal"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Posee alumbrado público?"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioAlumbrado"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siAlumbrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noAlumbrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/valorTelefonia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoTelefonia"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioTelefonia"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siTelefonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noTelefonia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/valorTransporteUrbano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoTransporteUrbano"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+        />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siTransporteUrbano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noTransporteUrbano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoRecoleccionDeBasura"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="20dp"
+            />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siRecoleccionDeBasura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noRecoleccionDeBasura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoAseoDeCalles"
+            android:textAlignment="center"
+            android:paddingBottom="20dp"
+            />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siAseoDeCalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noAseoDeCalles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/valorInternet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textoInternet"
+            android:textAlignment="center"
+            android:paddingBottom="10dp"
+            android:textSize="20dp"
+            />
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noInternet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/valorAcerasYBordillos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:text="@string/textoAcerasYBordillos"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/siAcerasYBordillos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/yes"
+                android:paddingRight="50dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/noAcerasYBordillos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingRight="30dp"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/no"
+                />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/botonCalculadorDelPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Calcular"/>
+
+
+        <TextView
+            android:id="@+id/respuesta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultado"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/colorBlack"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

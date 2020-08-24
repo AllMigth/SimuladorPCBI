@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">Bienes inmuebles - Periodo 2020</string>
+    <string name="textoValorMetroCuadrado">Ingrese el valor del metro cuadrado</string>
+    <string name="valorSuperficie">Ingrese el valor de la superficie sin construccion</string>
+
+
+    <string name="textoServiciosViaFrontal">Servicios frontales al inmueble</string>
+
+    <string name="textoCaracteristicasDelSuelo">Seleccione la caracteristica del suelo</string>
+    <string name="textoAlumbrado" translatable="true">¿Posee alumbrado público?</string>
+    <string name="textoTelefonia" translatable="true">¿Posee linea telefónica?</string>
+    <string name="textoTransporteUrbano" translatable="true">¿Posee transporte urbano?</string>
+    <string name="textoRecoleccionDeBasura" translatable="true">¿Posee recoleccion De basura?</string>
+    <string name="textoAseoDeCalles" translatable="true">¿Posee Aseo de calles?</string>
+    <string name="textoInternet" translatable="true">¿Posee Internet?</string>
+    <string name="textoAcerasYBordillos" translatable="true">¿Posee Aceras y Bordillos?</string>
+
+    <string name="valorSuperficieConstruido" translatable="true">Ingrese el valor de la superficie de construcciones </string>
+    <string name="valorMateriales" translatable="true">Ingrese el % de materiales en construcciones</string>
+    <string name="cemento" translatable="true">Cemento</string>
+    <string name="madera" translatable="true">Madera</string>
+    <string name="bambu" translatable="true">Caña/Bambú</string>
+
+    <string name="infraestructuraComplementariaYServicios" translatable="true">infraestructuraComplementariaYServicios</string>
+    <string name="avaluoDelInmueble" translatable="true">avaluoDelInmueble</string>
+
+    <string name="yes" translatable="true">Si</string>
+    <string name="no" translatable="true">No</string>
+
+    <string name="textoMaterial" translatable="true">Seleccione el tipo de material mayoritario en el inmueble</string>
+    <string name="textoNumeroDePisos">Seleccione el numero de pisos</string>
+
+    <string name="textoPreguntaEdificaciones">El bien inmueble posee edificaciones</string>
+
+
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="caracteristicasDelSueloArray">
+        <item>Seleccione</item>
+        <item>Seco</item>
+        <item>Inundable</item>
+        <item>Inestable</item>
+        <item>Rocoso</item>
+        <item>Cenagoso</item>
+        <item>Humendo</item>
+    </string-array>
+</resources>
