@@ -5,6 +5,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -204,5 +205,10 @@ public class MainActivity extends AppCompatActivity {
                 ((RadioButton) findViewById(R.id.materialMadera)).setEnabled(true);
                 break;
         }
+    }
+
+    public void sobres(View view) {
+        Intent intent = new Intent(MainActivity.this, about.class);
+        startActivity(intent);
     }
 }

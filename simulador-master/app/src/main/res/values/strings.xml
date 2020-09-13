@@ -31,7 +31,8 @@
     <string name="textoNumeroDePisos">Seleccione el numero de pisos</string>
 
     <string name="textoPreguntaEdificaciones">El bien inmueble posee edificaciones</string>
-
+    <string name="contacme">Contacta al desarrollador:</string>
+    <string name="about">Esta aplicacion calcula el precio comercial de bienes inmuebles para el canton Chone en el periodo 2020</string>
 
 
 </resources>
